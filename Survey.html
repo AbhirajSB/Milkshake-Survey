@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" type="text/css" href="survey.css" />
+  <head>
+    <title>Milkshake Survey 2020</title>
+  </head>
+  <body>
+    <h1 id="MS">Milkshake Survey</h1>
+    <p id="description">
+      Thank you for taking the time for making our Milkshakes tastier
+    </p>
+    <form id="survey-form" action="submit-info">
+      <!-- Name-->
+      <div>
+        <label id="name-label" for="name">Your Name:</label>
+        <input
+          name="name"
+          type="text"
+          placeholder="Insert Name"
+          id="name"
+          required
+        />
+      </div>
+      <!--Email-->
+      <div>
+        <label id="email-label" for="email">Your E-mail:</label>
+        <input
+          name="email"
+          type="email"
+          placeholder="Insert E-mail"
+          id="email"
+          required
+        />
+      </div>
+      <!--AGE-->
+      <div>
+        <label id="number-label" for="number">Your Age:</label>
+        <input
+          name="number"
+          type="number"
+          placeholder="Insert age"
+          id="number"
+          min="13"
+          max="90"
+          required
+        />
+      </div>
+      <!--Milk Dropdown-->
+      <div>
+        <p class="question">What type of milk do you drink?</p>
+        <select name="Dropdown" id="dropdown" required>
+          <option disabled selected> Select Milk Type:</option>
+          <option value="Goat">Goat</option>
+          <option value="Cow"> Cow</option>
+          <option value="Almond"> Almond</option>
+          <option value="Soya"> Soya</option>
+        </select>
+      </div>
+      <!--Radio buttons-->
+      <div>
+        <p class="question">What is your favourite flavour?</p>
+        <label
+          ><input class="flavour" name="flavour" type="radio" value="Vanilla" />
+          Vanilla</label
+        >
+        <label
+          ><input
+            class="flavour"
+            name="flavour"
+            type="radio"
+            value="Choclate"
+          />Choclate</label
+        >
+        <label
+          ><input
+            class="flavour"
+            name="flavour"
+            type="radio"
+            value="Caramel"
+          />Caramel</label
+        >
+      </div>
+      <!--CHeckbox-->
+      <div>
+        <p class="question">What do you eat with your milkshake?</p>
+        <label
+          ><input
+            class="extra"
+            name="extra"
+            type="checkbox"
+            value="Pizza"
+          />Pizza</label
+        >
+        <label
+          ><input
+            class="extra"
+            name="extra"
+            type="checkbox"
+            value="Chips"
+          />Chips</label
+        >
+        <label
+          ><input
+            class="extra"
+            name="extra"
+            type="checkbox"
+            value="Cookies"
+          />Cookies</label
+        >
+        <label
+          ><input
+            class="extra"
+            name="extra"
+            type="checkbox"
+            value="Nothing"
+          />Nothing</label
+        >
+      </div>
+      <div>
+        <p> Any additional comments on how you like your Milkshakes?</p>
+        <textarea
+        id="textarea"
+        name="Comment"
+        placeholder="Enter your extra comments here !"></textarea>
+      </div>
+      <button type="submit" id="submit">
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
